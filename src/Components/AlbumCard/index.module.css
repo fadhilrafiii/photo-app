@@ -1,0 +1,43 @@
+.container {
+  width: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  transition: all .1s;
+  margin: var(--space-ml);
+  position: relative;
+  z-index: 3;
+}
+
+.albumImage {
+  width: inherit;
+  height: 100px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0px 0px 0px 20px;;
+}
+
+.albumTitle {
+  font-size: 11px;
+  margin: var(--space-sm) var(--space-ml);
+  font-weight: 500;
+  color: white;
+  line-height: 14px;
+  height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.showImageOnly {
+  margin-top: 32px;
+}
+
+
+.showImageOnly .albumImage {
+  border-radius: 10px;
+}

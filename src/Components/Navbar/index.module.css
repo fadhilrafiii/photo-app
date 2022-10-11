@@ -1,0 +1,61 @@
+.container {
+  width: inherit;
+  position: fixed;
+  padding: var(--space-xxxxl) var(--space-xxl) var(--space-xl);
+  display: flex;
+  gap: var(--space-xxl);
+  transition: all .8s;
+  top: 0;
+}
+
+.container + div {
+  padding-top: 120.5px;
+}
+
+.slideUp {
+  top: -200px;
+}
+
+.slideUp + div{
+  padding-top: 0;
+
+}
+
+.container > div:last-child {
+  flex: 1 1;
+}
+
+.profilePicture {
+  width: 40px;
+  height: 40px;
+  margin-top: var(--space-s);
+}
+
+.profileName {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.profileRole {
+  color: var(--color-grey);
+  font-weight: 500;
+}
+
+.address {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.address > span {
+  color: var(--color-grey);
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.hamburger {
+  margin-left: auto;
+}

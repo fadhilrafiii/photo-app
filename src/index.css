@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Color var */
+  --color-primary: #F89F1E;
+  --color-secondary: #3FC4B6;
+  --color-tertiary: #E71D35;
+  --color-grey: #969696;
+  --color-grey80: rgba(150, 150, 150, 0.80);
+  --color-dark: #031727;
+
+  /* Font family var */
+  --font-primary: Poppins;
+
+  /* Padding/Margin var */
+  --space-s: 4px;
+  --space-sm: 6px;
+  --space-m: 8px;
+  --space-ml: 10px;
+  --space-l: 12px;
+  --space-xl: 16px;
+  --space-xxl: 20px;
+  --space-xxxl: 24px;
+  --space-xxxxl: 36px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+html {
+  background-color: var(--color-grey);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 414px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
+span {
+  font-size: 11px;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+}
+
+.page-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  transition: all 1s;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: var(--space-xxl);
+  right: var(--space-xxl);
+}

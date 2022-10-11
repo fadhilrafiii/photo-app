@@ -1,0 +1,17 @@
+.slick-slider {
+  overflow: hidden;
+}
+
+.slick-list {
+  overflow: visible;
+  transform: translateX(calc(-1 * var(--space-xxxxl))) !important;
+}
+
+.slick-slide {
+  box-sizing: content-box;
+  cursor: grab;
+}
+
+.slick-slide > div {
+  transition: all .5s;
+}
